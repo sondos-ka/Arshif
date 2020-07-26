@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/ed_Date_cln"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="@string/ChooseDate"
+        android:textSize="20dp"
+
+        android:textColor="@color/colorBlue"
+        android:gravity="center"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_AddLines"
+        android:layout_width="70dp"
+        android:layout_height="38dp"
+       app:layout_constraintTop_toBottomOf="@id/sp_details"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/colorDarkYellow"
+        android:text="@string/Add"
+        android:textSize="15dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/custom_button"
+
+        />
+    <Spinner
+
+        android:id="@+id/sp_details"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/ed_Date_cln"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ed_Cost"
+        android:outlineAmbientShadowColor="@color/colorDarkYellow"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorBlue"
+       android:textSize="50dp"
+
+
+        >
+       </Spinner>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/ed_Cost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+     app:layout_constraintTop_toBottomOf="@id/ed_Date_cln"
+        app:layout_constraintStart_toEndOf="@id/sp_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="@string/Cost"
+        android:inputType="number"
+        android:textSize="15dp"
+        android:textColor="@color/colorBlue"
+        android:gravity="center"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/ed_Note"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ed_Cost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_AddLines"
+        android:hint="@string/AddNote"
+        android:textSize="15dp"
+        android:textColor="@color/colorBlue"
+        android:gravity="center"
+
+        />
+
+    <view
+        android:id="@+id/lv_lines"
+        class="androidx.appcompat.app.AlertController$RecycleListView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ed_Note"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">أرشف</string>
+    <string name="Type">المحور</string>
+    <string name="Detail">التفصيل</string>
+    <string name="write_type">ادخل المحور</string>
+    <string name="Add">إضافة</string>
+    <string name="write_Detail">ادخل التفصيل</string>
+    <string name="Choose_type">اختر المحور</string>
+    <string name="Delete">حذف</string>
+    <string name="Update">تعديل</string>
+    <string name="UpdateMainType">تعديل اسم المحور</string>
+    <string name="UpdateDetailType">تعديل اسم التفصيل</string>
+    <string name="UpdateDone">تم التعديل</string>
+    <string name="DeleteDone">تم الحذف</string>
+    <string name="InsertDone">تمت الإضافة</string>
+    <string name="Next">التالي</string>
+
+    <string name="Add_Lines">ادخال المصاريف</string>
+    <string name="Show_Lines">استعراض المصاريف</string>
+    <string name="Search">البحث</string>
+    <string name="Edit">التعديل</string>
+    <string name="ChooseDate">اختر التاريخ</string>
+    <string name="Cost">المبلغ</string>
+    <string name="DAY">اليوم</string>
+    <string name="MONTH">الشهر</string>
+    <string name="YEAR">السنة</string>
+
+    <string name="AddNote">ادخل ملاحظتك</string>
+    <string name="ExportExcel">انشاء نسخة احتياطية</string>
+    <string name="ImportExcel">استرجاع النسخة السابقة</string>
+    <string name="ExportExcelDone">تم تحديث ملف الاكسل</string>
+    <string name="LineId">الرقم</string>
+    <string name="Note">الملاحظات</string>
+    <string name="Remind">تذكير</string>
+    <string name="RemindMessage">لم تقم بادخال اي مصاريف البارحة</string>
+
+
+
+    <string name="ErrorMainTypeNull">يرجى إدخال اسم المحور</string>
+
+    <string name="ErrorDetailNull">يرجى إدخال اسم التفصيل</string>
+
+    <string name="ErrorCantAddUpdateMainType">لا يمكنك إدخال نفس المحور مرتين يرجى تغيير اسم المحور</string>
+
+    <string name="ErrorCantDeleteMainType">لا يمكنك حذف هذا المحور لوجود تفاصيل تتبعه إذا أردت حذفه قم بحذف تفاصيله أولاً</string>
+
+    <string name="ErrorCantAddUpdateDetail">لا يمكنك إدخال نفس التفصيل مرتين يرجى تغيير اسم التفصيل</string>
+
+    <string name="ErrorCantDeleteMainDetail">لا يمكنك حذف هذا التفصيل لوجود مصاريف تتبعه إذا أردت حذفه قم بحذف مصاريفه أولاً</string>
+
+    <string name="ErrorCantAddUpdateLine">لا يمكنك إدخال نفس التفصيل بنفس التاريخ مرتين </string>
+    <string name="ErrorLineNull">يرجى التأكد من ادخال المبلغ والتاريخ </string>
+    <string name="ErrorDeleteDetails">لا يمكنك حذف التفصيل لوجود مصاريف متعلقة به اذا أردت حذف التفصيل قم بحذف مصاريفه اولا </string>
+
+
+
+
+
+
+    <string name="title_activity_line_multi_screen_">أرشف</string>
+
+
+    <string-array name="Edit_fields">
+
+        <item>
+            المحور
+        </item>
+        <item>
+التفصيل
+        </item>
+    </string-array>
+
+</resources>
